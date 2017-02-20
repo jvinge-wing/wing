@@ -1,0 +1,236 @@
+/********BEGIN NAVIGATION*********/
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Anton', sans-serif;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.main_h {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+}
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
+.main_h #logo {
+  float: left;
+  margin-left: 15%;
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+}
+
+#logo {
+  float: left;
+  height: 70px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 220px;
+}
+
+nav {
+  float: right;
+  margin-right: 15%;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+@media only screen and (max-width: 766px) {
+  nav ul {
+    width: 100%;
+  }
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 50px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 20px;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+/*********END NAVIGATION*********/
+/********BEGIN TOP IMAGERY SECTION********/
+#top-imagery {
+  animation: background-move 6000s;
+  padding: 0;
+  background-size: cover;
+}
+#top-imagery h1 {
+  animation: background-move 60s linear infinite;
+  animation-fill-mode: forwards;
+  background: url(http://wallpaperlayer.com/img/2015/11/gorgeous-sky-wallpaper-124-170-hd-wallpapers.jpg);
+  background-size: 100%;
+  font-size: 8vw;
+  line-height: 1.3em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: grayscale(1);
+  /* Old WebKit */
+  filter: grayscale(1);
+}
+@media only screen and (max-width: 780px) {
+  #top-imagery h1 {
+    font-size: 10vw;
+  }
+}
+@media only screen and (max-width: 460px) {
+  #top-imagery h1 {
+    font-size: 11vw;
+  }
+}
+@keyframes background-move {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+.hero {
+  position: relative;
+  background: url(http://www.extremis.be/UPLOADS/IMGS-STORIES-COVERS/1500/item_UNFOLDING-LIKE-A-BIRDS-WINGS_49970.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+  min-height: 500px;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 460px) {
+  .hero {
+    min-height: 200px;
+  }
+}
+
+/********END TOP IMAGERY SECTION********/
+/********BEGIN PROFILE SECTION********/
+.row.content {
+  padding: 50px 2% 250px;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+.row.content * {
+  box-sizing: border-box;
+}
+.row.content h2 {
+  border-bottom: 3px solid #808285;
+  color: #64b3e8;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 1em;
+  text-transform: uppercase;
+  width: 100%;
+}
+.row.content p {
+  font-size: 1rem;
+  line-height: 2;
+}
+.row.content .size1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.row.content .row .col-md-4 svg {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 40%;
+}
+.row.content .row .col-md-4 h3 {
+  color: #808285;
+  font-size: 1.2rem;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/********END PROFILE SECTION********/
+
